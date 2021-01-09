@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+
+<body>
+    <table>
+        <caption>全国篮球大赛报名系统</caption><br>
+        <thead>
+            <tr>
+                <th>队名</th>
+                <th>队长</th>
+                <th>建队时长</th>
+                <th>操作</th>
+            </tr>
+            <tr>
+                <td><input type="text" class="teamName"></td>
+                <td><input type="text" class="teamBoss"></td>
+                <td><input type="text" class="month"></td>
+                <td>
+                    <button type="button" class="add">添加</button>
+                    <button type="button" class="search">查询</button>
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+<script src="../static/jquery-3.5.1.min.js"></script>
+<script src="../static/template-web.js"></script>
+<script src="../static/promiseAjax.js"></script>
+<script src="../static/aynscPromiseAjax.js"></script>
+<script src="../static/index.js"></script>
+<script type="text/html" id="tpl">
+    {{if users.length > 0}} {{each users value}}
+    <tr>
+        <td>
+            <input type="text" class="teamName" value={{value.teamName}} data-id={{value._id}}>
+        </td>
+        <td><input type="text" class="teamBoss" value={{value.teamBoss}}></td>
+        <td><input type="text" class="month" value={{value.month}}></td>
+        <td><button type="button" class="update">修改</button>
+            <button type="button" class="delete">删除</button></td>
+    </tr>
+    {{/each}} {{else}}
+    <tr>
+        <td colspan="5">没有找到满足条件的数据...</td>
+        </td>
+        {{/if}}
+</script>
+<script>
+</script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/reset.css">
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+
+<body>
+    <div id="Header_nov">
+        <a href="../home/home.html"><img src="./img/login-one.png" alt=""></a>
+        <span>帮助</span>
+    </div>
+    <div id="logo">
+        <img src="./img/logo.png" alt="">
+    </div>
+    <div id="login">
+        <input type="text" placeholder="请输入正确账号"><br>
+        <input type="password" placeholder="请输入正确密码">
+    </div>
+    <div class="submit">
+        <a href="../home/home.html"><img src="./img/login-three.png" alt=""></a>
+    </div>
+    <div class="footer">
+        <div>
+            <ul class="user_server">
+                <li><a href="#">忘记密码</a></li>
+                <li><a href="../register/register.html">立即注册</a></li>
+            </ul>
+        </div>
+        <p>登录即代表阅读并同意服务协议</p>
+        <ul class="alter_login">
+            <li><img src="./img/login-microblog.png" alt=""></li>
+            <li><img src="./img/login-qq.png" alt=""></li>
+            <li><img src="./img/login-WeChat.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+<script src="../static/zepto.js"></script>
+<script src="../static/touch.js"></script>
+<script src="../static/font_size.js"></script>
+<script src="../static/template-web.js"></script>
+<script src="../static/AJAX.js"></script>
+
+<script>
+    $("#login").find("input").on("blur", function() {})
+</script>
+<script>
+    //取消默认事件
+    document.querySelector(".submit").querySelector("a").onclick = function(e) {
+        e = e || window.event;
+        e.preventDefault();
+    };
+    $(".submit").find("a").tap(function() {
+        var userName = $("#login").find("input").eq(0).val() ? $("#login").find("input").eq(0).val() : null;
+        var passWord = $("#login").find("input").eq(1).val() ? $("#login").find("input").eq(1).val() : null;
+        var obj = 'type=login&phone=' + userName + '&pass=' + passWord;
+        // var obj = 'type=register&phone=13893339999&pass=12345667';
+        ajax("http://192.168.1.24:3000/users", function(data) {
+            console.log(data);
+            if (data.ok == false) {
+                alert("手机号或密码错误")
+                return false;
+            }
+            window.location.replace("../home/home.html");
+            //操作dom在页面中显示
+        }, "POST", obj);
+    })
+</script>
+
+</html>

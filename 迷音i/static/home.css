@@ -1,0 +1,196 @@
+#Header {
+  background-image: url("../home/img/矩形\ 7.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+#Header > span:nth-of-type(1) {
+  position: absolute;
+  left: 1.35rem;
+  top: 0.6rem;
+  font-size: 0.36rem;
+  color: white;
+}
+#Header > span:nth-of-type(2) {
+  position: absolute;
+  left: 3.25rem;
+  top: 0.6rem;
+  font-size: 0.36rem;
+  color: #ec32a5;
+}
+#Header > span:nth-of-type(3) {
+  font-size: 0.36rem;
+  position: absolute;
+  right: 1.37rem;
+  top: 0.6rem;
+  color: white;
+}
+#Header > img:nth-of-type(1) {
+  width: 0.44rem;
+  height: 0.44rem;
+  margin-left: 0.3rem;
+}
+#Header > img:nth-of-type(2) {
+  width: 0.44rem;
+  height: 0.44rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 0.62rem;
+}
+#Header > div {
+  width: 0.66rem;
+  height: 0.04rem;
+  background-color: #ec32a5;
+  position: absolute;
+  bottom: 0.1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swiper-container {
+  height: 4.09rem;
+}
+.swiper-container img {
+  height: 100%;
+  width: 100%;
+}
+#music_data {
+  font-size: 0;
+  height: 1.79rem;
+  padding-top: 0.42rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+#music_data ul li {
+  text-align: center;
+  width: 20%;
+  float: left;
+  padding-bottom: 0.32rem;
+}
+#music_data ul li span {
+  font-size: 0.28rem;
+  color: #333333;
+}
+#music_data ul li img {
+  height: 1.05rem;
+  width: 1.05rem;
+  margin-bottom: 0.08rem;
+}
+#menu_nov {
+  font-size: 0;
+  position: relative;
+}
+#menu_nov > p {
+  font-size: 0.36rem;
+  color: #333333;
+  margin-left: 0.31rem;
+  margin-bottom: 0.32rem;
+  margin-top: 0.42rem;
+}
+#menu_nov .switch_menu {
+  position: absolute;
+  top: 0.08rem;
+  right: 0.64rem;
+}
+#menu_nov .switch_menu > span:nth-of-type(1) {
+  color: #333333;
+  font-size: 0.25rem;
+  margin-right: 0.72rem;
+}
+#menu_nov .switch_menu > span:nth-of-type(2) {
+  font-size: 0.25rem;
+  color: #ec32a5;
+}
+#menu_nov .switch_menu .left_underline {
+  width: 0.56rem;
+  height: 0.04rem;
+  display: none;
+  float: left;
+  background-color: #ec32a5;
+}
+#menu_nov .switch_menu .right_underline {
+  width: 0.56rem;
+  float: right;
+  height: 0.04rem;
+  background-color: #ec32a5;
+}
+#menu_nov ul {
+  display: flex !important;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#menu_nov ul li {
+  width: 2.41rem;
+  height: 3.81rem;
+  margin-bottom: 0.32rem;
+}
+#menu_nov ul li img {
+  width: 100%;
+  height: 2.33rem;
+}
+#menu_nov ul li p {
+  font-size: 0.24rem;
+  height: 0.82rem;
+  margin-top: 0.16rem;
+  margin-left: 0.15rem;
+  margin-bottom: 0.12rem;
+  color: #333333;
+}
+#menu_nov ul li span {
+  margin-left: 0.15rem;
+  font-size: 0.18rem;
+  color: #999999;
+}
+#menu_nov .new_m {
+  display: none;
+}
+#play_menu {
+  background-image: url("../home/img/矩形\ 6.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: sticky;
+  font-size: 0;
+  bottom: 0;
+  height: 1rem;
+}
+#play_menu > img:nth-of-type(1) {
+  width: 0.68rem;
+  height: 0.68rem;
+  float: left;
+  margin-left: 0.32rem;
+  margin-top: 0.16rem;
+  border-radius: 50% 50%;
+}
+#play_menu > img:nth-of-type(2) {
+  width: 0.44rem;
+  height: 0.44rem;
+  float: right;
+  margin-top: 0.3rem;
+  margin-right: 0.32rem;
+}
+#play_menu > img:nth-of-type(3) {
+  width: 0.44rem;
+  margin-right: 0.32rem;
+  height: 0.44rem;
+  float: right;
+  margin-top: 0.3rem;
+}
+#play_menu > img:nth-of-type(4) {
+  position: absolute;
+  width: 0.44rem;
+  height: 0.44rem;
+  top: 0.3rem;
+  display: none;
+  right: 1.12rem;
+}
+#play_menu > ul {
+  float: left;
+  margin-top: 0.18rem;
+  margin-left: 0.2rem;
+}
+#play_menu > ul li:nth-of-type(1) {
+  font-size: 0.24rem;
+  color: white;
+}
+#play_menu > ul li:nth-of-type(2) {
+  font-size: 0.2rem;
+  color: white;
+}

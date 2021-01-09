@@ -1,0 +1,228 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("../images/李宇春.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+#Header{
+    position: relative;
+    &>span:nth-of-type(1){
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: .60rem;
+        font-size: .36rem;
+        color: white
+    }
+    & img:nth-of-type(1){
+        width: .44rem;
+        height: .44rem;
+        margin-left: .3rem;
+    }
+    &>img:nth-of-type(1){
+        width: .44rem;
+        height: .44rem;
+        position: absolute;
+        right: .3rem;
+        top: .62rem;
+    }
+}
+#audio_author{
+    text-align: center;
+    font-size: 0;
+    &>span:nth-of-type(1),span:nth-of-type(3){
+        width: .78rem;
+        display: inline-block;
+        height: 0.02rem;
+        background-color: white;
+        margin-bottom: .08rem;
+    }
+    &>span:nth-of-type(2){
+        font-size: .28rem;
+        color: #fff;
+        margin: 0 .26rem;
+    }
+}
+.audio_ajust{
+    text-align: center;
+    font-size: 0;
+    margin-top: .26rem;
+    img:nth-of-type(1),img:nth-of-type(2){
+        margin-right: .22rem;
+    }
+}
+#audio_bg{
+    height: 8.31rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0;
+    align-items: center;
+    /* ul {
+        padding-left: 1.3rem;
+        height: 150px;
+        overflow: hidden;
+        li {
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            font-size: .3rem;
+            color:white;
+
+        }
+    } */
+    img{
+        margin-top:.92rem;
+        width: 2.71rem;
+        height: 2.71rem;
+        transition: all 1s;
+        box-shadow: 0 0 20px gold;
+        border-radius: 50%;
+    }
+    .audio_bg_active{
+        animation: 8s rtate infinite linear; 
+    }
+}
+@keyframes rtate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.topAnue{
+    margin-bottom: .46rem;
+    font-size: 0;
+    height: .6rem;
+    li{
+        width: 25%;
+        text-align: center;
+        float: left;
+        img{
+            width: 0.6rem;
+            height: 0.6rem;
+        }
+    }
+}
+.play_ProgerssBar{
+    font-size: 0;
+    height: .3rem;
+    margin-bottom: .32rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    &>li:nth-of-type(1),li:nth-of-type(3){
+        text-align: center;
+        width: 1.14rem;
+        color: white;
+        &>span{
+            font-size: .19rem;
+        }
+    }
+    &>li:nth-of-type(2){
+        flex: 1;
+    }
+    .allProgerssBar{
+        position: relative;
+        background-color: white;
+        width: 100%;
+        margin-top: .15rem;
+        height: .02rem; 
+        border-radius: 5px;
+        .progerssBar{
+            position: absolute;
+            border-radius: 5px;
+            top: 0;
+            left: 0;
+            background-color:#ff3399;
+            width: 10%;
+            height: .02rem;
+            &>span{
+                position: absolute;
+                top: -8px;
+                right:0%;
+                font-size: .01rem;
+                color:#ff3399;
+                text-shadow: 0 0 .05rem gold;
+            }
+        }
+       
+    }
+}
+.bottomAnue{
+    width: 100%;
+    font-size: 0;
+    display: flex;
+    li{
+        width: 20%;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: .6rem;
+            height: 0.6rem;
+        }
+    }
+    & li:nth-of-type(3){
+        flex: 1.5;
+        img{
+            width: .95rem;
+            height: 0.95rem;
+        }
+        & img:nth-of-type(2){
+            display: none;
+        }
+    }
+}
+#music_menu{
+    font-size: 0;
+    width: 100%;
+    display: none;
+    padding: .3rem 0;
+    font-size: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px 5px;
+    position: fixed;
+    bottom: 0%;
+    li{
+        font-size: .2rem;
+        color:rgb(247, 190, 126);
+        display: flex;
+        margin-bottom: .2rem;
+        position: relative;
+        align-items: center;
+        img{
+            width: 0.7rem;
+            margin-left: .3rem;
+            height: 0.7rem;
+        }
+        & img:nth-of-type(2){
+            display: none;
+        }
+        & img:nth-of-type(3),img:nth-of-type(2){
+            width: .5rem;
+            position: absolute;
+            height: 0.5rem;
+            right: 10%;
+        }
+        & span:nth-of-type(1){
+            margin-left: .3rem;
+            font-size: .16rem;
+        }
+        & span:nth-of-type(2){
+            margin-left: .3rem;
+            span{
+                font-size: .12rem;
+            }
+        }
+    }
+    & li:nth-of-type(1){
+        color: rgb(240, 229, 82);
+    }
+}

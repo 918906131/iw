@@ -1,0 +1,52 @@
+body{
+    background-image: url("./images/12.jpg");
+    background-size: 100%;
+}
+table {
+    width: 1000px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+caption{
+    font-size: 30px;
+    font-family: 楷体;
+    font-weight: bold;
+    color: red;
+    margin-bottom: 10px;
+
+}
+thead tr {
+    text-align: center;
+    height: 100px;
+    font-size: 20px;
+    color: yellow;
+    border: 1px solid rgb(150, 114, 114);
+    background: rgb(150, 114, 114);
+}
+thead tr:nth-of-type(2){
+    height: 50px;
+    background: white;
+}
+tbody tr {
+    text-align: center;
+    height: 50px;
+    background: white;
+    border: 1px solid rgb(150, 114, 114);
+}
+tbody input{
+    font-weight: bold;
+}
+tbody tr:nth-child(2n-1):hover {
+    background: salmon;
+    color: springgreen;
+}
+
+tbody tr:nth-child(2n):hover {
+    background: springgreen;
+    color: salmon;
+}
+input{
+    text-align: center;
+    outline: none;
+    border-radius: 5px 5px;
+}

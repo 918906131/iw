@@ -1,0 +1,231 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-image: url("../images/李宇春.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+#Header {
+  position: relative;
+}
+#Header > span:nth-of-type(1) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0.6rem;
+  font-size: 0.36rem;
+  color: white;
+}
+#Header img:nth-of-type(1) {
+  width: 0.44rem;
+  height: 0.44rem;
+  margin-left: 0.3rem;
+}
+#Header > img:nth-of-type(1) {
+  width: 0.44rem;
+  height: 0.44rem;
+  position: absolute;
+  right: 0.3rem;
+  top: 0.62rem;
+}
+#audio_author {
+  text-align: center;
+  font-size: 0;
+}
+#audio_author > span:nth-of-type(1),
+#audio_author span:nth-of-type(3) {
+  width: 0.78rem;
+  display: inline-block;
+  height: 0.02rem;
+  background-color: white;
+  margin-bottom: 0.08rem;
+}
+#audio_author > span:nth-of-type(2) {
+  font-size: 0.28rem;
+  color: #fff;
+  margin: 0 0.26rem;
+}
+.audio_ajust {
+  text-align: center;
+  font-size: 0;
+  margin-top: 0.26rem;
+}
+.audio_ajust img:nth-of-type(1),
+.audio_ajust img:nth-of-type(2) {
+  margin-right: 0.22rem;
+}
+#audio_bg {
+  height: 8.31rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+  align-items: center;
+  /* ul {
+        padding-left: 1.3rem;
+        height: 150px;
+        overflow: hidden;
+        li {
+            height: 30px;
+            line-height: 30px;
+            overflow: hidden;
+            font-size: .3rem;
+            color:white;
+
+        }
+    } */
+}
+#audio_bg img {
+  margin-top: 0.92rem;
+  width: 2.71rem;
+  height: 2.71rem;
+  transition: all 1s;
+  box-shadow: 0 0 20px gold;
+  border-radius: 50%;
+}
+#audio_bg .audio_bg_active {
+  animation: 8s rtate infinite linear;
+}
+@keyframes rtate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.topAnue {
+  margin-bottom: 0.46rem;
+  font-size: 0;
+  height: 0.6rem;
+}
+.topAnue li {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+.topAnue li img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.play_ProgerssBar {
+  font-size: 0;
+  height: 0.3rem;
+  margin-bottom: 0.32rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.play_ProgerssBar > li:nth-of-type(1),
+.play_ProgerssBar li:nth-of-type(3) {
+  text-align: center;
+  width: 1.14rem;
+  color: white;
+}
+.play_ProgerssBar > li:nth-of-type(1) > span,
+.play_ProgerssBar li:nth-of-type(3) > span {
+  font-size: 0.19rem;
+}
+.play_ProgerssBar > li:nth-of-type(2) {
+  flex: 1;
+}
+.play_ProgerssBar .allProgerssBar {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  margin-top: 0.15rem;
+  height: 0.02rem;
+  border-radius: 5px;
+}
+.play_ProgerssBar .allProgerssBar .progerssBar {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  background-color: #ff3399;
+  width: 10%;
+  height: 0.02rem;
+}
+.play_ProgerssBar .allProgerssBar .progerssBar > span {
+  position: absolute;
+  top: -8px;
+  right: 0%;
+  font-size: 0.01rem;
+  color: #ff3399;
+  text-shadow: 0 0 0.05rem gold;
+}
+.bottomAnue {
+  width: 100%;
+  font-size: 0;
+  display: flex;
+}
+.bottomAnue li {
+  width: 20%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomAnue li img {
+  width: 0.6rem;
+  height: 0.6rem;
+}
+.bottomAnue li:nth-of-type(3) {
+  flex: 1.5;
+}
+.bottomAnue li:nth-of-type(3) img {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+.bottomAnue li:nth-of-type(3) img:nth-of-type(2) {
+  display: none;
+}
+#music_menu {
+  width: 100%;
+  display: none;
+  padding: 0.3rem 0;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px 5px;
+  position: fixed;
+  bottom: 0%;
+}
+#music_menu li {
+  font-size: 0.2rem;
+  color: #f7be7e;
+  display: flex;
+  margin-bottom: 0.2rem;
+  position: relative;
+  align-items: center;
+}
+#music_menu li img {
+  width: 0.7rem;
+  margin-left: 0.3rem;
+  height: 0.7rem;
+}
+#music_menu li img:nth-of-type(2) {
+  display: none;
+}
+#music_menu li img:nth-of-type(3),
+#music_menu li img:nth-of-type(2) {
+  width: 0.5rem;
+  position: absolute;
+  height: 0.5rem;
+  right: 10%;
+}
+#music_menu li span:nth-of-type(1) {
+  margin-left: 0.3rem;
+  font-size: 0.16rem;
+}
+#music_menu li span:nth-of-type(2) {
+  margin-left: 0.3rem;
+}
+#music_menu li span:nth-of-type(2) span {
+  font-size: 0.12rem;
+}
+#music_menu li:nth-of-type(1) {
+  color: #f0e552;
+}

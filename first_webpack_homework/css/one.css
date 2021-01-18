@@ -1,0 +1,93 @@
+body {
+  background-image: url(../images/574ec22e-bj_two@2x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+#Head {
+  margin-top: 0.67rem;
+  position: relative;
+  font-size: 0;
+}
+#Head img {
+  width: 0.2rem;
+  height: 0.3rem;
+  margin-left: 0.24rem;
+}
+#Head span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.34rem;
+  color: white;
+}
+#Container {
+  position: relative;
+  top: 1.53rem;
+  font-size: 0;
+}
+#Container .input_box {
+  margin: 0 auto;
+  width: 4.79rem;
+  height: 0.86rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.1rem;
+}
+#Container .input_box > img:first-of-type {
+  width: 0.36rem;
+  height: 0.35rem;
+  margin-left: 0.36rem;
+}
+#Container .input_box > img:last-of-type {
+  height: 0.46rem;
+  margin-left: 0.14rem;
+}
+#Container .input_box input::-webkit-input-placeholder {
+  color: white;
+}
+#Container .input_box input {
+  color: white;
+  outline: 0;
+  margin-left: 0.18rem;
+  border: none;
+  font-size: 0.2rem;
+  background: none;
+}
+#Container > .input_box:not(:first-of-type) {
+  margin-top: 0.05rem;
+}
+#Container button {
+  margin-top: 0.48rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 0;
+  border: none;
+  border-radius: 0.1rem;
+  color: white;
+  width: 4.79rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.66rem;
+  font-size: 0.27rem;
+  margin-bottom: 0.32rem;
+}
+#Container p {
+  font-size: 0.24rem;
+  margin-left: 1.05rem;
+  color: white;
+}
+#Container .input_foot {
+  margin: 2.6rem auto 0;
+  width: 4.79rem;
+  height: 0.64rem;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.1rem;
+  font-size: 0.24rem;
+  color: white;
+  justify-content: center;
+}
+
